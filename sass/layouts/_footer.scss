@@ -1,0 +1,21 @@
+.footer{
+    padding: 60px 0px;
+    background-color: $color-baner;
+}
+.footer_card-set{
+    display: flex;
+    gap: 70px;
+    align-items: baseline;  
+}
+.footer__card-item:last-child{
+    margin-left: auto;
+}
+.footer__logo{
+    margin-bottom: 20px;
+    display: block;
+}
+.footer__subtitle{
+    @extend %subtitle;
+    margin-bottom: 20px;
+    color: $color-white;
+}

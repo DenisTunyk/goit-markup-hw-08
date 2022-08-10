@@ -1,0 +1,30 @@
+// utils style
+@import 'utils/variables';
+@import 'utils/placeholder';
+@import 'utils/visually-hidden';
+// base style
+@import 'base/base';
+@import 'base/container';
+@import 'base/section';
+@import 'base/card-set';
+// layouts style
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/hero';
+@import 'layouts/site-about';
+@import 'layouts/site-work';
+@import 'layouts/site-command';
+@import 'layouts/site-clients';
+@import 'layouts/porfolio-work';
+// component style
+@import 'components/logo';
+@import 'components/nav';
+@import 'components/button';
+@import 'components/contact';
+@import 'components/form_mailing';
+@import 'components/modal';
+@import 'components/btn-close';
+@import 'components/form_feedback';
+@import 'components/custom-checkbox';
+@import 'components/filter';
+@import 'components/card-set-ico';

@@ -1,0 +1,26 @@
+.site-clients__item{
+    flex-basis: calc(100% /6 - var(--set-margin));
+}
+.site-clients__link{
+    display: flex;
+    /* width: 170px; */
+    height: 90px;
+    align-items: center;
+    fill: $color-ico;
+    border: 1px solid;
+    border-color: $color-ico;
+    border-radius: 4px;
+
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+    &:hover,
+    &:focus{
+        fill: $color-blue;
+        border-color: $color-blue;
+    }
+}
+.site-clients__svg{
+    display: block;
+    margin: 0 auto;
+}

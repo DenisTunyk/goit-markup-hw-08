@@ -1,0 +1,33 @@
+.card-set-ico {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.card-set-ico__item {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill: $color-ico;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: $color-blue;
+        fill: $color-white;
+    }
+
+    &--footer {
+        background-color: rgba(255, 255, 255, 0.1);
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: $timing-function;
+        fill: $color-white;
+    }
+}

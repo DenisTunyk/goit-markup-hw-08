@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Студія</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container main-nav">
+        <a class="logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
+        <ul class="main-nav__list list">
+          <li class="main-nav__item">
+            <a class="link main-nav__link main-nav__link--active" href="./index.html">Студія</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="link main-nav__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="main-nav__item"><a class="link main-nav__link" href="#">Контакти</a></li>
+        </ul>
+        <ul class="main-nav__list list">
+          <li class="main-nav__item">
+            <a class="link main-nav__link main-nav__link--cgrey" href="mailto:info@devstudio.com">
+              <svg class="main-nav__svg" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              <span>info@devstudio.com</span></a
+            >
+          </li>
+          <li class="main-nav__item">
+            <a class="link main-nav__link main-nav__link--cgrey" href="tel:+380961111111">
+              <svg class="main-nav__svg" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <span>+38 096 111 11 11</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section hero">
+        <div class="container">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <!-- <a href="#">Заказать услугу</a> -->
+          <button class="hero__btn btn" type="button" data-modal-open>Замовити послугу</button>
+          <!-- <input type="button" value="Заказать услугу" /> -->
+        </div>
+      </section>
+      <section class="section site-about">
+        <div class="container">
+          <!-- Этот заголовок будет потом не видимым -->
+          <h2 class="section__title visually-hidden">Наши лучшие качества</h2>
+          <ul class="card-set list">
+            <li class="card-set__item site-about__item">
+              <div class="site-about__svg">
+                <svg width="70" height="70">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="site-about__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="site-about__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+
+            <li class="card-set__item site-about__item">
+              <div class="site-about__svg">
+                <svg width="70" height="70">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="site-about__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="site-about__text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+
+            <li class="card-set__item site-about__item">
+              <div class="site-about__svg">
+                <svg width="70" height="70">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="site-about__subtitle">ПЛАНУВАННЯ</h3>
+              <p class="site-about__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+
+            <li class="card-set__item site-about__item">
+              <div class="site-about__svg">
+                <svg width="70" height="70">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="site-about__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="site-about__text">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section site-work">
+        <div class="container">
+          <h2 class="section__title">Чим ми займаємося</h2>
+          <ul class="card-set list">
+            <li class="card-set__item site-work__item">
+              <img
+                src="./images/ourbuisness/aboutus1.jpg"
+                alt="Пишем качественный код"
+                width="370"
+              />
+              <h3 class="site-work__block">Десктопні додатки</h3>
+            </li>
+            <li class="card-set__item site-work__item">
+              <img
+                src="./images/ourbuisness/aboutus3.jpg"
+                alt="Делаем адаптивную верстку"
+                width="370"
+              />
+              <h3 class="site-work__block">Мобільні додатки</h3>
+            </li>
+            <li class="card-set__item site-work__item">
+              <img src="./images/ourbuisness/aboutus2.jpg" alt="Нарисуем логотип" width="370" />
+              <h3 class="site-work__block">Дизайнерські рішення</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section site-command">
+        <div class="container">
+          <h2 class="section__title">Наша команда</h2>
+          <ul class="card-set list">
+            <li class="card-set__item site-command__item">
+              <img src="./images/ourcomand/people4.jpg" alt="Product Designer" width="270" />
+              <div class="site-command__body">
+                <h3 class="site-command__name">Игорь Демьяненко</h3>
+                <p class="site-command__text">Product Designer</p>
+                <ul class="list card-set-ico">
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на Інстаграм"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на Твітер"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на фейсбук"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на Лінкедін"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="card-set__item site-command__item">
+              <img src="./images/ourcomand/people1.jpg" alt="Frontend Developer" width="270" />
+              <div class="site-command__body">
+                <h3 class="site-command__name">Ольга Репина</h3>
+                <p class="site-command__text">Frontend Developer</p>
+                <ul class="list card-set-ico">
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на Інстаграм"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на Твітер"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на фейсбук"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на Лінкедін"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="card-set__item site-command__item">
+              <img src="./images/ourcomand/people2.jpg" alt="Marketing" width="270" />
+              <div class="site-command__body">
+                <h3 class="site-command__name">Николай Тарасов</h3>
+                <p class="site-command__text">Marketing</p>
+                <ul class="list card-set-ico">
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на Інстаграм"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на Твітер"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на фейсбук"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на Лінкедін"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="card-set__item site-command__item">
+              <img src="./images/ourcomand/people3.jpg" alt="UI Designer" width="270" />
+              <div class="site-command__body">
+                <h3 class="site-command__name">Михаил Ермаков</h3>
+                <p class="site-command__text">UI Designer</p>
+                <ul class="list card-set-ico">
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на Інстаграм"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на Твітер"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на фейсбук"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="card-set-ico__item"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Посилання на Лінкедін"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section site-clients">
+        <div class="container">
+          <h2 class="section__title">Постійні клієнти</h2>
+          <ul class="list card-set">
+            <li class="card-set__item site-clients__item">
+              <a
+                class="site-clients__link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Посилання на компанію номер 1"
+              >
+                <svg class="site-clients__svg" width="106" height="60">
+                  <use href="./images/icons.svg#icon-comp1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="card-set__item site-clients__item">
+              <a
+                class="site-clients__link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Посилання на компанію номер 2"
+              >
+                <svg class="site-clients__svg" width="106" height="60">
+                  <use href="./images/icons.svg#icon-comp2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="card-set__item site-clients__item">
+              <a
+                class="site-clients__link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Посилання на компанію номер 3"
+              >
+                <svg class="site-clients__svg" width="106" height="60">
+                  <use href="./images/icons.svg#icon-comp3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="card-set__item site-clients__item">
+              <a
+                class="site-clients__link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Посилання на компанію номер 4"
+              >
+                <svg class="site-clients__svg" width="106" height="60">
+                  <use href="./images/icons.svg#icon-comp4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="card-set__item site-clients__item">
+              <a
+                class="site-clients__link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Посилання на компанію номер 5"
+              >
+                <svg class="site-clients__svg" width="106" height="60">
+                  <use href="./images/icons.svg#icon-comp5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="card-set__item site-clients__item">
+              <a
+                class="site-clients__link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Посилання на компанію номер 6"
+              >
+                <svg class="site-clients__svg" width="106" height="60">
+                  <use href="./images/icons.svg#icon-comp6" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer_card-set">
+        <div class="footer__card-item">
+          <a class="logo footer__logo" href="#">Web<span class="logo--white">Studio</span></a>
+          <address class="contact">
+            <ul class="list">
+              <li class="contact__item">
+                <a
+                  class="contact__link link"
+                  href="https://goo.gl/maps/ytw7tUdtrMJyWJkt6"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="contact__item">
+                <a class="contact__link link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__card-item">
+          <h3 class="footer__subtitle">приєднуйтесь</h3>
+          <ul class="list card-set-ico">
+            <li>
+              <a
+                class="card-set-ico__item card-set-ico__item--footer"
+                href="#"
+                aria-label="Посилання на Інстаграм"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="card-set-ico__item card-set-ico__item--footer"
+                href="#"
+                aria-label="Посилання на Твітер"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="card-set-ico__item card-set-ico__item--footer"
+                href="#"
+                aria-label="Посилання на Фейсбук"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="card-set-ico__item card-set-ico__item--footer"
+                href="#"
+                aria-label="Посилання на Лінкедін"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__card-item">
+          <h3 class="footer__subtitle">Підпишіться на розсилку</h3>
+          <form class="form-mailing" autocomplete="off">
+            <input
+              class="form-mailing__input"
+              type="email"
+              name="mail"
+              id="email-footer"
+              placeholder="E-mail"
+              required
+            />
+            <button class="btn" type="submit">
+              <span class="btn__icon">Підписатися</span>
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-close" data-modal-close>
+          <svg class="btn-close__icon" width="14" height="14">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="form-feedback" autocomplete="off">
+          <strong class="form-feedback__title">Залиште свої дані, ми вам передзвонимо</strong>
+          <div class="form-feedback__field">
+            <label class="form-feedback__label" for="name">Ім'я</label>
+            <div class="form-feedback__block">
+              <input class="form-feedback__input" type="text" name="name" id="name" required />
+              <span class="form-feedback__icon">
+                <svg width="18" height="18">
+                  <use href="./images/icons.svg#icon-person" />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="form-feedback__field">
+            <label class="form-feedback__label" for="phone">Телефон</label>
+            <div class="form-feedback__block">
+              <input class="form-feedback__input" type="tel" name="phone" id="phone" required />
+              <span class="form-feedback__icon">
+                <svg width="18" height="18">
+                  <use href="./images/icons.svg#icon-phone" />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="form-feedback__field">
+            <label class="form-feedback__label" for="email">Пошта</label>
+            <div class="form-feedback__block">
+              <input class="form-feedback__input" type="email" name="email" id="email" required />
+              <span class="form-feedback__icon">
+                <svg width="18" height="18">
+                  <use href="./images/icons.svg#icon-email" />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="form-feedback__field form-feedback__field--mb20">
+            <label class="form-feedback__label" for="comment">Коментар</label>
+            <textarea
+              class="form-feedback__textarea"
+              name="feedback"
+              rows="7"
+              id="comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <label class="custom-checkbox">
+            <input class="custom-checkbox_input" type="checkbox" name="license" value="license" />
+            <span class="custom-checkbox__icon"></span>
+            <span
+              >Погоджуюся з розсилкою та приймаю
+              <a class="custom-checkbox__link" target="_blank" href="#">Умови договору</a></span
+            >
+          </label>
+          <button class="btn form-feedback__btn" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <!-- Modal window end -->
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

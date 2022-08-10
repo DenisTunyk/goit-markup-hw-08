@@ -1,0 +1,22 @@
+.site-about {
+    padding-bottom: 0px;
+}
+.site-about__item {
+    flex-basis: calc(100% / 4 - var(--set-margin));
+}
+.site-about__svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: $color-bg-secondary;
+}
+.site-about__subtitle {
+    @extend %subtitle;
+    margin-bottom: 10px;
+    color: $color-black;
+}

@@ -1,0 +1,22 @@
+.btn-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    fill: #000000;
+    transition: fill 250ms $timing-function;
+    &:hover,
+    &:focus {
+        fill: $color-blue;
+    }
+}
+
