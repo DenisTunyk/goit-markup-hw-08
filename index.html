@@ -79,27 +79,27 @@
               <a
                 class="social__link link"
                 href="#"
-                targer="_blank"
+                target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Посилання на Інстаграм"
-                >Instagram</a
-              >
+                >Instagram
+              </a>
             </li>
             <li class="social__item">
               <a
                 class="social__link link"
                 href="#"
-                targer="_blank"
+                target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Посилання на Інстаграм"
-                >Twitter</a
-              >
+                >Twitter
+              </a>
             </li>
             <li class="social__item">
               <a
                 class="social__link link"
                 href="#"
-                targer="_blank"
+                target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Посилання на Інстаграм"
                 >Facebook
@@ -109,11 +109,11 @@
               <a
                 class="social__link link"
                 href="#"
-                targer="_blank"
+                target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Посилання на Інстаграм"
-                >LinkedIn</a
-              >
+                >LinkedIn
+              </a>
             </li>
           </ul>
         </div>
@@ -188,7 +188,12 @@
           <ul class="card-set list">
             <li class="card-set__item site-work__item">
               <img
-                src="./images/ourbuisness/aboutus1.jpg"
+                srcset="
+                  ./images/ourbuisness/img-1-370.jpg 370w,
+                  ./images/ourbuisness/img-1-740.jpg 740w
+                "
+                sizes="(min-width: 1200px) 370px, 100vw"
+                src="./images/ourbuisness/img-1-370.jpg"
                 alt="Пишем качественный код"
                 width="370"
               />
@@ -196,14 +201,28 @@
             </li>
             <li class="card-set__item site-work__item">
               <img
-                src="./images/ourbuisness/aboutus3.jpg"
+                srcset="
+                  ./images/ourbuisness/img-2-370.jpg 370w,
+                  ./images/ourbuisness/img-2-740.jpg 740w
+                "
+                sizes="(min-width: 1200px) 370px, 100vw"
+                src="./images/ourbuisness/img-2-370.jpg"
                 alt="Делаем адаптивную верстку"
                 width="370"
               />
               <h3 class="site-work__block">Мобільні додатки</h3>
             </li>
             <li class="card-set__item site-work__item">
-              <img src="./images/ourbuisness/aboutus2.jpg" alt="Нарисуем логотип" width="370" />
+              <img
+                srcset="
+                  ./images/ourbuisness/img-3-370.jpg 370w,
+                  ./images/ourbuisness/img-3-740.jpg 740w
+                "
+                sizes="(min-width: 1200px) 370px, 100vw"
+                src="./images/ourbuisness/img-3-370.jpg"
+                alt="Нарисуем логотип"
+                width="370"
+              />
               <h3 class="site-work__block">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -744,7 +763,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer_card-set">
         <div class="footer__card-item">
           <a class="logo footer__logo" href="#">Web<span class="logo--white">Studio</span></a>
@@ -837,7 +856,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
@@ -895,7 +914,7 @@
           <label class="custom-checkbox">
             <input class="custom-checkbox_input" type="checkbox" name="license" value="license" />
             <span class="custom-checkbox__icon"></span>
-            <span
+            <span class="custom-checkbox__text"
               >Погоджуюся з розсилкою та приймаю
               <a class="custom-checkbox__link" target="_blank" href="#">Умови договору</a></span
             >

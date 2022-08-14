@@ -151,19 +151,56 @@ img {
   padding: 60px 0px;
   background-color: #2f303a;
 }
-
-.footer_card-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 70px;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer .btn {
+    margin: 0 auto;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .footer_card-set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 60px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.footer__card-item {
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .footer__card-item {
+    margin-bottom: 60px;
+  }
+}
 .footer__card-item:last-child {
-  margin-left: auto;
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__card-item:last-child {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__card-item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .footer__logo {
@@ -730,21 +767,23 @@ img {
   color: #ffffff;
 }
 
-.form-mailing {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 12px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .form-mailing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .form-mailing__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   background-color: inherit;
@@ -756,6 +795,21 @@ img {
   line-height: 1.25;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 1200px) {
+  .form-mailing__input {
+    width: 358px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .form-mailing__input {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-mailing__input {
+    max-width: 450px;
+  }
 }
 
 .backdrop {
@@ -784,7 +838,6 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
   height: 581px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -797,6 +850,16 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .btn-close {
@@ -830,10 +893,15 @@ img {
 .form-feedback__title {
   display: block;
   margin-bottom: 12px;
-  line-height: 1.15;
+  line-height: 1.5;
   font-size: 20px;
   text-align: center;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .form-feedback__title {
+    line-height: 1.15;
+  }
 }
 
 .form-feedback__field {
@@ -999,6 +1067,11 @@ img {
   border: solid 2px #2196f3;
 }
 
+.custom-checkbox__text {
+  font-size: 12px;
+  line-height: 1.17;
+}
+
 .custom-checkbox__link {
   color: #2196f3;
 }
@@ -1062,8 +1135,9 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card-set-ico__item {

@@ -2,10 +2,13 @@
     display: block;
     margin-bottom: 12px;
 
-    line-height: calc(23 / 20);
+    line-height: calc(30 / 20);
     font-size: 20px;
     text-align: center;
     color: $color-black;
+    @media screen and (min-width: 1200px) {
+        line-height: calc(23 / 20);
+    }
 }
 .form-feedback__field {
     margin-bottom: 10px;
