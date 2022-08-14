@@ -20,37 +20,107 @@
     <header class="header">
       <nav class="container main-nav">
         <a class="logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
-        <ul class="main-nav__list list">
-          <li class="main-nav__item">
-            <a class="link main-nav__link main-nav__link--active" href="./index.html">Студія</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="link main-nav__link" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="main-nav__item"><a class="link main-nav__link" href="#">Контакти</a></li>
-        </ul>
-        <ul class="main-nav__list list">
-          <li class="main-nav__item">
-            <a class="link main-nav__link main-nav__link--cgrey" href="mailto:info@devstudio.com">
-              <svg class="main-nav__svg" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              <span>info@devstudio.com</span></a
-            >
-          </li>
-          <li class="main-nav__item">
-            <a class="link main-nav__link main-nav__link--cgrey" href="tel:+380961111111">
-              <svg class="main-nav__svg" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              <span>+38 096 111 11 11</span></a
-            >
-          </li>
-        </ul>
+        <button
+          type="button"
+          class="menu-button"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="menu-containter"
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="menu-button__menu" href="./images/icons.svg#icon-menu-btn"></use>
+            <use class="menu-button__close" href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-containter" data-menu>
+          <div class="navigation">
+            <ul class="navigation__list list">
+              <li class="navigation__item">
+                <a class="link navigation__link navigation__link--active" href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <ul class="contacts__list list">
+              <li class="contacts__item">
+                <a
+                  class="link contacts__link contacts__link--cgrey contacts__link--email"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="contacts__svg" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  <span>info@devstudio.com</span></a
+                >
+              </li>
+              <li class="contacts__item">
+                <a
+                  class="link contacts__link contacts__link--cgrey contacts__link--mobile"
+                  href="tel:+380961111111"
+                >
+                  <svg class="contacts__svg" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  <span>+38 096 111 11 11</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <ul class="social list">
+            <li class="social__item">
+              <a
+                class="social__link link"
+                href="#"
+                targer="_blank"
+                rel="noreferrer noopener"
+                aria-label="Посилання на Інстаграм"
+                >Instagram</a
+              >
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link link"
+                href="#"
+                targer="_blank"
+                rel="noreferrer noopener"
+                aria-label="Посилання на Інстаграм"
+                >Twitter</a
+              >
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link link"
+                href="#"
+                targer="_blank"
+                rel="noreferrer noopener"
+                aria-label="Посилання на Інстаграм"
+                >Facebook
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link link"
+                href="#"
+                targer="_blank"
+                rel="noreferrer noopener"
+                aria-label="Посилання на Інстаграм"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <section class="section hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <!-- <a href="#">Заказать услугу</a> -->
@@ -60,10 +130,9 @@
       </section>
       <section class="section site-about">
         <div class="container">
-          <!-- Этот заголовок будет потом не видимым -->
           <h2 class="section__title visually-hidden">Наши лучшие качества</h2>
-          <ul class="card-set list">
-            <li class="card-set__item site-about__item">
+          <ul class="site-about__list list">
+            <li class="site-about__item">
               <div class="site-about__svg">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -75,7 +144,7 @@
               </p>
             </li>
 
-            <li class="card-set__item site-about__item">
+            <li class="site-about__item">
               <div class="site-about__svg">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -87,7 +156,7 @@
               </p>
             </li>
 
-            <li class="card-set__item site-about__item">
+            <li class="site-about__item">
               <div class="site-about__svg">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -99,7 +168,7 @@
               </p>
             </li>
 
-            <li class="card-set__item site-about__item">
+            <li class="site-about__item">
               <div class="site-about__svg">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -143,9 +212,60 @@
       <section class="section site-command">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
-          <ul class="card-set list">
-            <li class="card-set__item site-command__item">
-              <img src="./images/ourcomand/people4.jpg" alt="Product Designer" width="270" />
+          <ul class="site-command__list list">
+            <li class="site-command__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/ourcomand/img-1@1x-lg.webp 1x,
+                    ./images/ourcomand/img-1@2x-lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/ourcomand/img-1@1x-lg.jpg 1x,
+                    ./images/ourcomand/img-1@2x-lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/ourcomand/img-1@1x-md.webp 1x,
+                    ./images/ourcomand/img-1@2x-md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/ourcomand/img-1@1x-md.jpg 1x,
+                    ./images/ourcomand/img-1@2x-md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/ourcomand/img-1@1x-sm.webp 1x,
+                    ./images/ourcomand/img-1@2x-sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 767px)"
+                  srcset="
+                    ./images/ourcomand/img-1@1x-sm.jpg 1x,
+                    ./images/ourcomand/img-1@2x-sm.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img src="./images/ourcomand/img-1@1x-sm.jpg" alt="Product Designer" />
+              </picture>
+
               <div class="site-command__body">
                 <h3 class="site-command__name">Игорь Демьяненко</h3>
                 <p class="site-command__text">Product Designer</p>
@@ -205,8 +325,56 @@
                 </ul>
               </div>
             </li>
-            <li class="card-set__item site-command__item">
-              <img src="./images/ourcomand/people1.jpg" alt="Frontend Developer" width="270" />
+            <li class="site-command__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/ourcomand/img-2@1x-lg.webp 1x,
+                    ./images/ourcomand/img-2@2x-lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/ourcomand/2@1x-lg.jpg 1x, ./images/ourcomand/2@2x-lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/ourcomand/img-2@1x-md.webp 1x,
+                    ./images/ourcomand/img-2@2x-md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/ourcomand/img-2@1x-md.jpg 1x,
+                    ./images/ourcomand/img-2@2x-md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/ourcomand/img-2@1x-sm.webp 1x,
+                    ./images/ourcomand/img-2@2x-sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 767px)"
+                  srcset="
+                    ./images/ourcomand/img-2@1x-sm.jpg 1x,
+                    ./images/ourcomand/img-2@2x-sm.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img src="./images/ourcomand/img-2@1x-sm.jpg" alt="Frontend Developer" />
+              </picture>
+
               <div class="site-command__body">
                 <h3 class="site-command__name">Ольга Репина</h3>
                 <p class="site-command__text">Frontend Developer</p>
@@ -266,8 +434,59 @@
                 </ul>
               </div>
             </li>
-            <li class="card-set__item site-command__item">
-              <img src="./images/ourcomand/people2.jpg" alt="Marketing" width="270" />
+            <li class="site-command__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/ourcomand/img-3@1x-lg.webp 1x,
+                    ./images/ourcomand/img-3@2x-lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/ourcomand/img-3@1x-lg.jpg 1x,
+                    ./images/ourcomand/img-3@2x-lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/ourcomand/img-3@1x-md.webp 1x,
+                    ./images/ourcomand/img-3@2x-md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/ourcomand/img-3@1x-md.jpg 1x,
+                    ./images/ourcomand/img-3@2x-md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/ourcomand/img-3@1x_sm.webp 1x,
+                    ./images/ourcomand/img-3@2x_sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/ourcomand/img-3@1x_sm.jpg 1x,
+                    ./images/ourcomand/img-3@2x_sm.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img src="./images/ourcomand/img-3@1x-sm.jpg" alt="Marketing" />
+              </picture>
+
               <div class="site-command__body">
                 <h3 class="site-command__name">Николай Тарасов</h3>
                 <p class="site-command__text">Marketing</p>
@@ -327,8 +546,56 @@
                 </ul>
               </div>
             </li>
-            <li class="card-set__item site-command__item">
-              <img src="./images/ourcomand/people3.jpg" alt="UI Designer" width="270" />
+            <li class="site-command__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/ourcomand/img-4@1x-lg.webp 1x,
+                    ./images/ourcomand/img-4@2x-lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/ourcomand/2@1x-lg.jpg 1x, ./images/ourcomand/2@2x-lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/ourcomand/img-4@1x-md.webp 1x,
+                    ./images/ourcomand/img-4@2x-md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/ourcomand/img-4@1x-md.jpg 1x,
+                    ./images/ourcomand/img-4@2x-md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/ourcomand/img-4@1x_sm.webp 1x,
+                    ./images/ourcomand/img-4@2x_sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/ourcomand/img-4@1x_sm.jpg 1x,
+                    ./images/ourcomand/img-4@2x-sm.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img src="./images/ourcomand/img-4@1x-sm" alt="UI Designer" />
+              </picture>
+
               <div class="site-command__body">
                 <h3 class="site-command__name">Михаил Ермаков</h3>
                 <p class="site-command__text">UI Designer</p>
@@ -394,8 +661,8 @@
       <section class="section site-clients">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
-          <ul class="list card-set">
-            <li class="card-set__item site-clients__item">
+          <ul class="site-clients__list list">
+            <li class="site-clients__item">
               <a
                 class="site-clients__link"
                 href="#"
@@ -408,7 +675,7 @@
                 </svg>
               </a>
             </li>
-            <li class="card-set__item site-clients__item">
+            <li class="site-clients__item">
               <a
                 class="site-clients__link"
                 href="#"
@@ -421,7 +688,7 @@
                 </svg>
               </a>
             </li>
-            <li class="card-set__item site-clients__item">
+            <li class="site-clients__item">
               <a
                 class="site-clients__link"
                 href="#"
@@ -434,7 +701,7 @@
                 </svg>
               </a>
             </li>
-            <li class="card-set__item site-clients__item">
+            <li class="site-clients__item">
               <a
                 class="site-clients__link"
                 href="#"
@@ -447,7 +714,7 @@
                 </svg>
               </a>
             </li>
-            <li class="card-set__item site-clients__item">
+            <li class="site-clients__item">
               <a
                 class="site-clients__link"
                 href="#"
@@ -460,7 +727,7 @@
                 </svg>
               </a>
             </li>
-            <li class="card-set__item site-clients__item">
+            <li class="site-clients__item">
               <a
                 class="site-clients__link"
                 href="#"
@@ -477,7 +744,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer_card-set">
         <div class="footer__card-item">
           <a class="logo footer__logo" href="#">Web<span class="logo--white">Studio</span></a>
@@ -570,7 +837,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
@@ -640,5 +907,6 @@
     <!-- Modal window end -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

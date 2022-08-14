@@ -2,11 +2,29 @@
     background-color: $color-bg-secondary;
     text-align: center;
 }
+.site-command__list{
+    @media screen and (min-width: 768px) {
+        @include card-set(var(--set-margin));
+    }
+}
 .site-command__item{
-    flex-basis: calc(100% / 4 - var(--set-margin));
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--color-white);
+    
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        @include card-set__item(var(--set-margin), 2);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        @include card-set__item(var(--set-margin), 4);
+    }
 }
 .site-command__body{
     padding: 30px;

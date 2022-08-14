@@ -1,5 +1,21 @@
+.porfolio-work__list {
+    @media screen and (min-width: 768px) {
+        @include card-set(var(--set-margin));
+    }
+}
+
 .porfolio-work__item{
-    flex-basis: calc(100% / 3 - var(--set-margin));
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+        @include card-set__item(var(--set-margin), 2);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        @include card-set__item(var(--set-margin), 3);
+    }
 }
 .porfolio-work__link{
     display: block;

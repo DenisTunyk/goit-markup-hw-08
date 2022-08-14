@@ -1,6 +1,11 @@
 .main-nav {
     display: flex;
     align-items: center;
+    
+    @media screen and (min-width: 768px) {
+        //justify-content: space-between;
+        gap:80px;
+    }
 }
 .main-nav__list {
     display: flex;

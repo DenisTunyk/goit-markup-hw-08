@@ -30,8 +30,12 @@ ul {
 
 img {
     display: block;
-    max-width: 100%;
+    max-width: 100%; //картинка тягнеться не більше її оригінального розміру
     height: auto;
+
+    //точно по центру
+    object-fit: cover;
+    object-position: center;
 }
 
 

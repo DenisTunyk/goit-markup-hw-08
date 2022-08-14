@@ -1,10 +1,22 @@
+.site-clients__list{
+    @include card-set(var(--set-margin));
+}
+
 .site-clients__item{
-    flex-basis: calc(100% /6 - var(--set-margin));
+    @include card-set__item(var(--set-margin), 2);
+
+    @media screen and (min-width: 768px) {
+        @include card-set__item(var(--set-margin), 3);
+    }
+    @media screen and (min-width: 1200px) {
+        @include card-set__item(var(--set-margin), 6);
+    }
+
 }
 .site-clients__link{
     display: flex;
     /* width: 170px; */
-    height: 90px;
+    height: 92px;
     align-items: center;
     fill: $color-ico;
     border: 1px solid;

@@ -14,6 +14,7 @@
     cursor: pointer;
     fill: #000000;
     transition: fill 250ms $timing-function;
+    
     &:hover,
     &:focus {
         fill: $color-blue;

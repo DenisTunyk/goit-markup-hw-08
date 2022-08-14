@@ -2,6 +2,7 @@
 @import 'utils/variables';
 @import 'utils/placeholder';
 @import 'utils/visually-hidden';
+@import 'utils/mixins';
 // base style
 @import 'base/base';
 @import 'base/container';
@@ -18,7 +19,7 @@
 @import 'layouts/porfolio-work';
 // component style
 @import 'components/logo';
-@import 'components/nav';
+@import 'components/main-nav';
 @import 'components/button';
 @import 'components/contact';
 @import 'components/form_mailing';
@@ -28,3 +29,8 @@
 @import 'components/custom-checkbox';
 @import 'components/filter';
 @import 'components/card-set-ico';
+@import 'components/menu-button';
+@import 'components/menu-container';
+@import 'components/nav-contact';
+@import 'components/nav-navigation';
+@import 'components/nav-social';
