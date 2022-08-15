@@ -1077,6 +1077,8 @@ img {
 
 .custom-checkbox__icon {
   display: inline-block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 16px;
   height: 15px;
   background: #FFFFFF;
