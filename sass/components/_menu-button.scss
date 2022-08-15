@@ -7,16 +7,25 @@
     background-color: transparent;
     z-index: 101;   
     cursor: pointer;
+    
     @media screen and (min-width: 768px) {
         display: none;
     }
+        &:hover .menu-button__close,
+        &:focus .menu-button__close
+        {
+            fill: $color-blue;
+        }
 }
 
 .menu-button__close{
     display: none;
+    fill: $color-black;
+    transition: fill 250ms $timing-function;
+
     .menu-button.is-open &{
         display: block;
-    }
+    }  
 }
 
 .menu-button__menu{

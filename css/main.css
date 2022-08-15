@@ -202,6 +202,11 @@ img {
             flex-grow: 1;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__card-item {
+    text-align: left;
+  }
+}
 
 .footer__logo {
   margin-bottom: 20px;
@@ -542,7 +547,14 @@ img {
 }
 
 .porfolio-work__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -570,8 +582,8 @@ img {
   left: 0;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,13 +603,20 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .porfolio-work__link:hover .porfolio-work__overlay, .porfolio-work__link:focus .porfolio-work__overlay {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
+  opacity: 1;
 }
 
 .porfolio-work__block {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border-left: solid 1px #EEEEEE;
   border-right: solid 1px #EEEEEE;
@@ -616,6 +635,11 @@ img {
 .porfolio-work__text {
   font-size: 16px;
   line-height: 1.88;
+}
+
+.porfolio-work__p {
+  height: 100%;
+  overflow: auto;
 }
 
 /* Стилі для логотипа */
@@ -838,12 +862,13 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 581px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+  max-height: 100%;
+  overflow: auto;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -851,7 +876,12 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
   }
@@ -1193,9 +1223,15 @@ img {
     display: none;
   }
 }
+.menu-button:hover .menu-button__close, .menu-button:focus .menu-button__close {
+  fill: #2196f3;
+}
 
 .menu-button__close {
   display: none;
+  fill: #212121;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-button.is-open .menu-button__close {
   display: block;
