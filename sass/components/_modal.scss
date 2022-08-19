@@ -9,6 +9,7 @@
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
+    z-index: 150;
 }
 
 .backdrop.is-hidden {
